@@ -1,5 +1,7 @@
-name: Run MATLAB Script on Self-Hosted Runner
-on: [push]
+name: Run MATLAB Script on github runner 
+on:
+  workflow_dispatch:
+
 jobs:
   my-job:
     name: Run MATLAB Script
@@ -11,5 +13,4 @@ jobs:
         uses: matlab-actions/run-command@v1
         with:
           command: myscript
-          
-          
+      
