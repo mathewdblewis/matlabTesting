@@ -14,8 +14,8 @@ jobs:
 #       - name: run test.m
 #         run: "./octave test.m"
 
-        - name: download octave
-          run: "sudo apt-get install octave"
+      - name: download octave
+        run: "sudo apt-get install octave"
         
 #       - name: Check out repository
 #         uses: actions/checkout@v2
