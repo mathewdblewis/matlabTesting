@@ -1,0 +1,16 @@
+name: Run MATLAB Script on github runner 
+on:
+  workflow_dispatch:
+#   push:
+
+
+jobs:
+  my-job:
+    name: Run MATLAB Script
+    runs-on: ubuntu-latest
+    steps:
+      - name: download octave
+        run: "sudo apt-get install octave"
+      - name: run octave
+        run: octave test.m
+      
