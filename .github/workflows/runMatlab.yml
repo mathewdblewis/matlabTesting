@@ -15,7 +15,7 @@ jobs:
         run: "whoami"
         
       - name: can I sudo?
-        run: "sudo ls"
+        run: "sudo apt-get install octave"
         
 #       - name: Check out repository
 #         uses: actions/checkout@v2
