@@ -11,11 +11,8 @@ jobs:
       - name: get number of cores
         run: "nproc --all"
         
-      - name: whoami
-        run: "whoami"
-        
-      - name: can I sudo?
-        run: "sudo apt-get install octave"
+      - name: run test.m
+        run: "./octave test.m"
         
 #       - name: Check out repository
 #         uses: actions/checkout@v2
