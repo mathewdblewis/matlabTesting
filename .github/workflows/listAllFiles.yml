@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: list all files
-        run: ls -R -a
+        run: ls -R -a /
