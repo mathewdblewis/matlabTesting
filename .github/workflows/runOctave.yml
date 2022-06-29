@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: download octave
         run: "sudo apt-get install octave"
+      - name: make matlab file
+        run: "echo '1:5\n' > test.m"
       - name: run octave
         run: octave test.m
       
