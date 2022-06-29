@@ -8,14 +8,14 @@ jobs:
     name: Run MATLAB Script
     runs-on: ubuntu-latest
     steps:
-      - name: get number of cores
-        run: "nproc --all"
-        
-#       - name: run test.m
-#         run: "./octave test.m"
-
       - name: download octave
-        run: "sudo apt-get install octave"
+        run: "sudo apt-get install octave; octPath=$(which octave); cp $octPath ."
+        
+      - name: save octave as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: octave
+          path: octave
         
 #       - name: Check out repository
 #         uses: actions/checkout@v2
