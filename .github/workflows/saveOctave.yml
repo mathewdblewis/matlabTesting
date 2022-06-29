@@ -1,4 +1,4 @@
-name: Run MATLAB Script on github runner 
+name: save octave as an artifact
 on:
   workflow_dispatch:
 #   push:
