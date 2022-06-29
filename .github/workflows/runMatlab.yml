@@ -1,6 +1,7 @@
 name: Run MATLAB Script on github runner 
 on:
-  workflow_dispatch:
+#   workflow_dispatch:
+  push:
 
 jobs:
   my-job:
